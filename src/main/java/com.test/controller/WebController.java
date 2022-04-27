@@ -19,7 +19,7 @@ public class WebController {
 
   @GetMapping(path = "/login")
   public @ResponseBody ResponseEntity<String> login(@RequestParam(name = "username") String username) {
-    return ResponseEntity.ok(String.format("Welcome back %s!", username));
+    return ResponseEntity.ok(String.format("Welcome back %s!", "username"));
   }
 
   @GetMapping(path = "/picture/{user}")
